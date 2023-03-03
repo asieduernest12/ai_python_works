@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    image: jhebeler/classtank:705.603.jupyterlab
+    # build: .
+    ports:
+     - "5000:5000"
+     - "8888:8888"
+     - "8787:8787"
+     - "8786:8786"
+    restart: unless-stopped
+
+    volumes:
+    #  - .:/code
+     - .:/rapids/notebooks/workspace
+  # redis:
+  #   image: redis
