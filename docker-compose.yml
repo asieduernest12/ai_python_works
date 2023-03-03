@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  web:
+  python:
     image: jhebeler/classtank:705.603.jupyterlab
     # build: .
     ports:
